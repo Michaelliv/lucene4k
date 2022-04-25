@@ -1,4 +1,4 @@
-package com.github.lucene4k
+package com.github.michaelliv.lucene4k
 
 import org.apache.lucene.document.DoubleRange
 import org.apache.lucene.document.FloatRange

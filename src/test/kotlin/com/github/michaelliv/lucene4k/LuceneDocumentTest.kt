@@ -1,4 +1,4 @@
-package com.github.lucene4k
+package com.github.michaelliv.lucene4k
 
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.ShouldSpec
