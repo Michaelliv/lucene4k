@@ -1,4 +1,4 @@
-package com.github.michaelliv.lucene4k
+package io.github.michaelliv.lucene4k
 
 import org.apache.lucene.index.DirectoryReader
 import org.apache.lucene.index.IndexCommit

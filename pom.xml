@@ -3,12 +3,12 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.michaelliv.lucene4k</groupId>
+    <groupId>io.github.michaelliv.lucene4k</groupId>
     <artifactId>lucene4k</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>com.github.michaelliv.lucene4k lucene4k</name>
+    <name>io.github.michaelliv.lucene4k lucene4k</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
