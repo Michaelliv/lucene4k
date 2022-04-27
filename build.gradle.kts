@@ -6,8 +6,9 @@ plugins {
     signing
 }
 
+val luceneVersion = "9.1.0"
 group = "io.github.michaelliv.lucene4k"
-version = "1.0.0"
+version = "1.0.0-$luceneVersion"
 
 java {
     withJavadocJar()
@@ -74,10 +75,11 @@ java {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.21")
-    implementation("org.apache.lucene:lucene-core:9.1.0")
-    implementation("org.apache.lucene:lucene-queryparser:9.1.0")
-    implementation("org.apache.lucene:lucene-queries:9.1.0")
-    implementation("org.apache.lucene:lucene-misc:9.1.0")
+    implementation("org.apache.lucene:lucene-core:$luceneVersion")
+    implementation("org.apache.lucene:lucene-queryparser:$luceneVersion")
+    implementation("org.apache.lucene:lucene-queries:$luceneVersion")
+    implementation("org.apache.lucene:lucene-misc:$luceneVersion")
+
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:1.6.21")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:1.6.21")
