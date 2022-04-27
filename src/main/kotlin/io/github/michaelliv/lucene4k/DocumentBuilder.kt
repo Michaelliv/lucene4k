@@ -5,6 +5,11 @@ import org.apache.lucene.index.IndexableField
 import org.apache.lucene.index.VectorSimilarityFunction
 import java.net.InetAddress
 
+/**
+ * A builder class for Lucene's [Document]
+ *
+ * The class should not be used by itself, call [builder function][buildDocument] instead
+ */
 open class DocumentBuilder {
     val fields: MutableList<IndexableField> = mutableListOf()
 

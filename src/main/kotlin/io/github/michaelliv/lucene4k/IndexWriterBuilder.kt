@@ -4,7 +4,11 @@ import org.apache.lucene.index.IndexWriter
 import org.apache.lucene.index.IndexWriterConfig
 import org.apache.lucene.store.Directory
 
-
+/**
+ * A builder class for Lucene's [IndexWriter]
+ *
+ * The class should not be used by itself, call [builder function][buildIndexWriter] instead
+ */
 class IndexWriterBuilder {
     private var indexWriterConfig: (() -> IndexWriterConfig)? = null
     fun withIndexWriterConfig(block: () -> IndexWriterConfig) {

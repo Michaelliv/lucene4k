@@ -6,6 +6,11 @@ import org.apache.lucene.index.IndexWriter
 import org.apache.lucene.search.IndexSearcher
 import org.apache.lucene.store.Directory
 
+/**
+ * A builder class for Lucene's [IndexSearcher]
+ *
+ * The class should not be used by itself, call [builder function][buildIndexSearcher] instead
+ */
 class IndexSearcherBuilder {
     private var directory: (() -> Directory)? = null
     fun withDirectory(block: () -> Directory) {
